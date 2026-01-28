@@ -3,64 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Delvaris | IT & Software Workflow Services</title>
-  <meta name="description" content="Delvaris is an Indian IT services firm focused on workflow automation, software systems, and execution-driven engineering."/>
+  <title>Delvaris — IT & Software Workflow Services</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Inter, Arial, Helvetica, sans-serif;
+    :root {
+      --primary: #0f2a44;
+      --secondary: #1f2937;
+      --accent: #2563eb;
+      --light: #f8fafc;
+      --border: #e5e7eb;
+      --text: #111827;
+      --muted: #6b7280;
+    }
+
+    * {
       margin: 0;
-      background: #ffffff;
-      color: #1f2933;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--text);
       line-height: 1.6;
     }
+
     header {
-      border-bottom: 1px solid #e5e7eb;
-      padding: 24px 32px;
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 24px;
-      letter-spacing: 0.5px;
-    }
-    header p {
-      margin: 4px 0 0;
-      font-size: 14px;
-      color: #4b5563;
-    }
-    nav {
-      margin-top: 16px;
-    }
-    nav a {
-      margin-right: 16px;
-      font-size: 14px;
-      text-decoration: none;
-      color: #1f2933;
-    }
-    section {
-      max-width: 960px;
-      padding: 48px 32px;
-      margin: auto;
-    }
-    h2 {
       font-size: 20px;
-      margin-bottom: 12px;
+      font-weight: 600;
+      color: var(--primary);
     }
-    ul {
-      padding-left: 20px;
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      font-size: 14px;
+      color: var(--secondary);
+      font-weight: 500;
     }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 24px;
+    }
+
+    .hero {
+      max-width: 720px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .section {
+      margin-top: 80px;
+    }
+
+    .section h3 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+
+    .section p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 24px;
+      border-radius: 6px;
+    }
+
+    .card h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--secondary);
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
     footer {
-      border-top: 1px solid #e5e7eb;
-      padding: 24px 32px;
-      font-size: 13px;
-      color: #4b5563;
+      margin-top: 100px;
+      background: white;
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    footer strong {
+      color: var(--secondary);
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>DELVARIS</h1>
-  <p>IT & Software Workflow Services</p>
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
@@ -70,64 +154,88 @@
   </nav>
 </header>
 
-<section>
-  <h2>Execution-Focused IT & Workflow Systems</h2>
-  <p>
-    Delvaris builds structured, reliable software workflows that convert intent into execution.
-    The firm operates with a strong emphasis on clarity, documentation, and supervised delivery.
-  </p>
-</section>
+<main class="container">
 
-<section id="about">
-  <h2>About Delvaris</h2>
-  <p>
-    Delvaris is a professionally operated IT services firm focused on workflow automation,
-    software system design, and execution reliability.
-  </p>
-  <p>
-    The organization operates as a sole proprietorship registered in India and follows
-    structured delivery practices suitable for academic, institutional, and enterprise engagement.
-  </p>
-</section>
+  <section class="hero">
+    <h2>Execution-Focused IT & Workflow Systems</h2>
+    <p>
+      Delvaris designs and supports structured software workflows that
+      emphasize execution reliability, documentation clarity, and system discipline.
+    </p>
+  </section>
 
-<section id="services">
-  <h2>Services</h2>
-  <ul>
-    <li>Workflow Automation & Design</li>
-    <li>Software-Assisted System Development</li>
-    <li>Process Documentation & Testing</li>
-    <li>Internal Tooling & Execution Systems</li>
-    <li>Technical Mentorship & Supervision</li>
-  </ul>
-</section>
+  <section id="about" class="section">
+    <h3>About Delvaris</h3>
+    <p>
+      Delvaris is an India-based IT services and workflow systems firm focused on
+      building dependable, execution-oriented software processes. The company
+      operates with an emphasis on structure, supervision, and real-world system design.
+      <br><br>
+      Delvaris operates as a sole proprietorship registered in India and undertakes
+      work aligned with internal development, academic collaboration, and client-aligned systems.
+    </p>
+  </section>
 
-<section id="work">
-  <h2>Projects & Work</h2>
-  <p>
-    Delvaris undertakes internal and client-aligned workflow projects focused on
-    real-world execution systems, proof-of-concepts, and structured system builds.
-  </p>
-</section>
+  <section id="services" class="section">
+    <h3>Services</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Workflow Automation & Design</h4>
+        <p>Designing structured workflows that improve process execution and traceability.</p>
+      </div>
+      <div class="card">
+        <h4>Software System Development</h4>
+        <p>Building internal tools and systems aligned with operational requirements.</p>
+      </div>
+      <div class="card">
+        <h4>Process Documentation & Testing</h4>
+        <p>Documentation-driven development with clear testing and validation steps.</p>
+      </div>
+      <div class="card">
+        <h4>Execution & Internal Tooling</h4>
+        <p>Supporting execution systems that assist operational and academic workflows.</p>
+      </div>
+      <div class="card">
+        <h4>Technical Mentorship</h4>
+        <p>Guided technical supervision for structured learning and system understanding.</p>
+      </div>
+    </div>
+  </section>
 
-<section id="internships">
-  <h2>Internships & Training</h2>
-  <p><strong>Mode:</strong> Online / Remote</p>
-  <p><strong>Domains:</strong> Workflow Automation, Software Systems, Documentation & Testing</p>
-  <p>
-    All internship activities are structured and supervised by experienced technical mentors.
-    Internships are conducted strictly for academic learning and skill development.
-  </p>
-</section>
+  <section id="work" class="section">
+    <h3>Projects & Work</h3>
+    <p>
+      Delvaris undertakes internal development initiatives, proof-of-concept systems,
+      and workflow-oriented software builds focused on practical execution and learning.
+      Work is approached conservatively with emphasis on correctness and maintainability.
+    </p>
+  </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p><strong>Company:</strong> Delvaris</p>
-  <p><strong>Email:</strong> ops@delvaris.in</p>
-  <p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
-</section>
+  <section id="internships" class="section">
+    <h3>Internships & Training</h3>
+    <p>
+      Delvaris offers structured, supervised internships in software workflows,
+      documentation practices, and system design.
+      <br><br>
+      Internship activities are conducted strictly for academic learning and
+      skill development, under guided technical supervision.
+    </p>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contact</h3>
+    <p>
+      <strong>Delvaris</strong><br>
+      IT & Software Workflow Services<br>
+      Bengaluru, Karnataka, India<br><br>
+      Email: <strong>ops@delvaris.in</strong>
+    </p>
+  </section>
+
+</main>
 
 <footer>
-  © Delvaris | IT & Software Workflow Services | Bengaluru, India | ops@delvaris.in
+  © Delvaris — IT & Software Workflow Services | Bengaluru, India | ops@delvaris.in
 </footer>
 
 </body>
