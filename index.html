@@ -2,241 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Delvaris — IT & Software Workflow Services</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #0f2a44;
-      --secondary: #1f2937;
-      --accent: #2563eb;
-      --light: #f8fafc;
-      --border: #e5e7eb;
-      --text: #111827;
-      --muted: #6b7280;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background: var(--light);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: white;
-      border-bottom: 1px solid var(--border);
-      padding: 18px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      font-size: 20px;
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    nav a {
-      margin-left: 24px;
-      text-decoration: none;
-      font-size: 14px;
-      color: var(--secondary);
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 24px;
-    }
-
-    .hero {
-      max-width: 720px;
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 16px;
-    }
-
-    .hero p {
-      font-size: 17px;
-      color: var(--muted);
-      margin-bottom: 32px;
-    }
-
-    .section {
-      margin-top: 80px;
-    }
-
-    .section h3 {
-      font-size: 26px;
-      font-weight: 600;
-      margin-bottom: 16px;
-      color: var(--primary);
-    }
-
-    .section p {
-      max-width: 760px;
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
-      margin-top: 32px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 24px;
-      border-radius: 6px;
-    }
-
-    .card h4 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 8px;
-      color: var(--secondary);
-    }
-
-    .card p {
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    footer {
-      margin-top: 100px;
-      background: white;
-      border-top: 1px solid var(--border);
-      padding: 32px 24px;
-      text-align: center;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    footer strong {
-      color: var(--secondary);
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delvaris | IT & Software Workflow Services</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-<header>
-  <h1>DELVARIS</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#work">Work</a>
-    <a href="#internships">Internships</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header class="header">
+  <div class="container">
+    <h1 class="logo">DELVARIS</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main class="container">
-
-  <section class="hero">
+<section class="hero">
+  <div class="container">
     <h2>Execution-Focused IT & Workflow Systems</h2>
-    <p>
-      Delvaris designs and supports structured software workflows that
-      emphasize execution reliability, documentation clarity, and system discipline.
-    </p>
-  </section>
+    <p>Delvaris designs structured, reliable software workflows that convert intent into execution.</p>
+  </div>
+</section>
 
-  <section id="about" class="section">
+<section id="about" class="section">
+  <div class="container">
     <h3>About Delvaris</h3>
     <p>
-      Delvaris is an India-based IT services and workflow systems firm focused on
-      building dependable, execution-oriented software processes. The company
-      operates with an emphasis on structure, supervision, and real-world system design.
-      <br><br>
-      Delvaris operates as a sole proprietorship registered in India and undertakes
-      work aligned with internal development, academic collaboration, and client-aligned systems.
+      Delvaris is an India-based IT and software workflow services firm focused on
+      structured delivery, execution reliability, and supervised system development.
     </p>
-  </section>
+    <p>
+      The organization operates as a sole proprietorship and undertakes internal and
+      client-aligned workflow projects with a documentation-driven approach.
+    </p>
+  </div>
+</section>
 
-  <section id="services" class="section">
+<section id="services" class="section alt">
+  <div class="container">
     <h3>Services</h3>
-    <div class="grid">
-      <div class="card">
-        <h4>Workflow Automation & Design</h4>
-        <p>Designing structured workflows that improve process execution and traceability.</p>
-      </div>
-      <div class="card">
-        <h4>Software System Development</h4>
-        <p>Building internal tools and systems aligned with operational requirements.</p>
-      </div>
-      <div class="card">
-        <h4>Process Documentation & Testing</h4>
-        <p>Documentation-driven development with clear testing and validation steps.</p>
-      </div>
-      <div class="card">
-        <h4>Execution & Internal Tooling</h4>
-        <p>Supporting execution systems that assist operational and academic workflows.</p>
-      </div>
-      <div class="card">
-        <h4>Technical Mentorship</h4>
-        <p>Guided technical supervision for structured learning and system understanding.</p>
-      </div>
-    </div>
-  </section>
+    <ul class="services">
+      <li>Workflow Automation & System Design</li>
+      <li>Software-Assisted Process Development</li>
+      <li>Internal Tooling & Execution Systems</li>
+      <li>Documentation, Testing & Validation</li>
+      <li>Technical Mentorship & Supervision</li>
+    </ul>
+  </div>
+</section>
 
-  <section id="work" class="section">
+<section id="work" class="section">
+  <div class="container">
     <h3>Projects & Work</h3>
     <p>
-      Delvaris undertakes internal development initiatives, proof-of-concept systems,
-      and workflow-oriented software builds focused on practical execution and learning.
-      Work is approached conservatively with emphasis on correctness and maintainability.
+      Delvaris undertakes internal development initiatives and proof-of-concept systems
+      focused on real-world execution workflows and process automation.
     </p>
-  </section>
+  </div>
+</section>
 
-  <section id="internships" class="section">
-    <h3>Internships & Training</h3>
-    <p>
-      Delvaris offers structured, supervised internships in software workflows,
-      documentation practices, and system design.
-      <br><br>
-      Internship activities are conducted strictly for academic learning and
-      skill development, under guided technical supervision.
-    </p>
-  </section>
-
-  <section id="contact" class="section">
+<section id="contact" class="section alt">
+  <div class="container">
     <h3>Contact</h3>
-    <p>
-      <strong>Delvaris</strong><br>
-      IT & Software Workflow Services<br>
-      Bengaluru, Karnataka, India<br><br>
-      Email: <strong>ops@delvaris.in</strong>
-    </p>
-  </section>
+    <p><strong>Email:</strong> ops@delvaris.in</p>
+    <p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
+  </div>
+</section>
 
-</main>
-
-<footer>
-  © Delvaris — IT & Software Workflow Services | Bengaluru, India | ops@delvaris.in
+<footer class="footer">
+  <div class="container">
+    <p>© Delvaris | IT & Software Workflow Services | Bengaluru, India</p>
+  </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
