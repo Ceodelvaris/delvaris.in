@@ -190,3 +190,28 @@ a[href^="mailto:"]:hover {
   color: #ffffff;
   border-bottom-color: rgba(255,255,255,0.6);
 }
+/* ================= EMAIL LINKS — GLOBAL OVERRIDE ================= */
+
+/* Base mail links everywhere */
+a[href^="mailto:"] {
+  color: #d7e3f0;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(215, 227, 240, 0.35);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hover state */
+a[href^="mailto:"]:hover {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Force visibility inside contact section */
+.contact a[href^="mailto:"] {
+  color: #d7e3f0;
+}
+
+/* Force visibility inside footer */
+.footer a[href^="mailto:"] {
+  color: #d7e3f0;
+}
