@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth <= 768) return;
-
   const elements = document.querySelectorAll(".reveal");
 
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
+          entry.target.classList.add("is-visible");
           observer.unobserve(entry.target);
         }
       });
