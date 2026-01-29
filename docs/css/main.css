@@ -210,7 +210,34 @@ a[href^="mailto:"]:hover {
 .contact a[href^="mailto:"] {
   color: #d7e3f0;
 }
+/* ================= FORCE MAIL LINK COLOR (MOBILE + DESKTOP) ================= */
 
+/* Kill browser default blue */
+a,
+a:visited,
+a:active {
+  color: inherit;
+}
+
+/* Explicit mail link styling */
+a[href^="mailto:"] {
+  color: #d7e3f0 !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(215, 227, 240, 0.35);
+}
+
+/* Hover / tap feedback */
+a[href^="mailto:"]:hover,
+a[href^="mailto:"]:focus {
+  color: #ffffff !important;
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Ensure contact + footer override opacity */
+.contact a[href^="mailto:"],
+.footer a[href^="mailto:"] {
+  color: #d7e3f0 !important;
+}
 /* Force visibility inside footer */
 .footer a[href^="mailto:"] {
   color: #d7e3f0;
